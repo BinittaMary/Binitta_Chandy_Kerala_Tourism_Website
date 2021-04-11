@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kerala Tourism</title>
+  <link rel="icon" href="Images/150px-Kerala_God's_Own_Country_Logo.svg.png" type="image/icon type">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Navigation bar starts here -->
+  <header>
+    <div class="navbar-color">
+      <div class="row">
+        <div class="col-lg-6">
+          <!-- Image and text -->
+          <nav class="navbar navbar-light navbar-color">
+            <div class="container">
+              <a class="navbar-brand" href="index.html">
+                <img class="home-log-height" src="Images/150px-Kerala_God's_Own_Country_Logo.svg.png" alt="Home">
+              </a>
+            </div>
+          </nav>
+        </div>
+        <div class="col-lg-6 my-auto">
+          <!-- Navigation Link -->
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  <a class="nav-link text-white" href="KnowUS.html">Know Us</a>
+                  <a class="nav-link text-white" href="Districts_index.html">Districts at a Glance</a>
+                  <a class="nav-link text-white" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+                  <a class="nav-link text-white" href="SignUp.html">Sign Up</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Navigation Bar ends here -->
+
+<!-- Modal Login starts -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content" style="width: 20rem;">
+      <div class="modal-body">
+        <form>
+          <div class="d-grid mb-1">
+            <a href="#" class="btn btn-primary btn-block py-2 " style="background-color: #3b5998" >
+              <span class="font-weight-bold">Login with Facebook</span>
+            </a>
+          </div>
+          <div class="d-grid mb-1">
+            <a href="#" class="btn btn-primary btn-block py-2" style="background-color: #dd4b39">
+              <span class="font-weight-bold">Login with Google</span>
+            </a>
+          </div>
+   
+          <div class="form-group col-lg-12 mx-auto d-flex align-items-center my-4">
+            <div class="border-bottom w-100 ml-5"></div>
+            <span class="px-2 small text-muted font-weight-bold text-muted">or</span>
+            <div class="border-bottom w-100 mr-5"></div>
+          </div>
+
+       <!-- Email input -->
+          <div class="form-outline mb-3">
+              <input type="text" id="form2Example1" class="form-control" placeholder="User Name"/>
+          </div>
+      
+          <!-- Password input -->
+          <div class="form-outline mb-3">
+             <input type="password" id="form2Example2" class="form-control" placeholder="Password"/>
+          </div>
+        
+          <!-- 2 column grid layout for inline styling -->
+          <div class="row mb-3">
+            <div class="col d-flex justify-content-center">
+              <!-- Checkbox -->
+              <div class="form-check col">
+                <input class="form-check-input" type="checkbox" value="" id="form2Example3" unchecked/>
+                <label class="form-check-label" for="form2Example3"> Remember me </label>
+              </div>
+            </div>
+        
+            <div class="col">
+              <!-- Simple link -->
+              <a href="ForgetPassword.html" class="login-modal-anchor">Forgot password?</a>
+            </div>
+          </div>
+        
+          <!-- Submit button -->
+          <div class="d-grid">
+            <button type="submit" class="btn btn-primary btn-floating mb-4 ">Login</button>
+          </div>
+
+        
+          <!-- Register buttons -->
+          <div class="text-center">
+            <p>Not a member? <a href="SignUp.html" class="login-modal-anchor">Sign Up</a></p>
+            <!-- dividier -->
+          </div>
+        </form>
+      </div>
+   </div>
+  </div>
+</div>
+<!-- Login Modal ends -->
+
+  <!-- Main Content starts here --> 
+
+  <!-- Carousel image -->
+  <section>
+    <div class="container pt-2 bg-light pb-2">
+      <div class="rows">
+        <div class="col-lg-12">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active carousal-height">
+                <img src="Images/Gods-Own-Courosal_1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item carousal-height">
+                <img src="Images/kerala-backwater_carousal_2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item carousal-height">
+                <img src="Images/carousel_5.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item carousal-height">
+                <img src="Images/Corousel_6.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item carousal-height">
+                <img src="Images/athirapally-waterfalls-thrissur_Carousel_5.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item carousal-height">
+                <img src="Images/padayani_carousal.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item carousal-height">
+                <img src="Images/Wild_life_carousal.jpg" class="d-block w-100" alt="...">
+              </div>
+           </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"  data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"  data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Experience Kerala content -->
+ <section>
+  <div class="container-fluid home-exp-container-bg p-2">
+    <h3 class="card-title text-center home-exp-title">Experience the Vibes of Kerala</h3> 
+    <div class="rows">
+      <div class="cols-lg-3">
+        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+          <div class="carousel-inner">
+              <div class="carousel-item active exp-carousal-height">
+                <!--cardset 1 begins  -->
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-3 item">
+                     <div class="box" style="background-image: url('Images/authentic-street-food-of-kerala_1580446133.jpeg'); height: 30rem; width :100%;">
+                       <div class="cover" style="background-color: #A5D6A7;">
+                         <h3 class="name text-center home-exp-card-title">Ethnic Cuisine</h3>
+                         <p class="description">Spices have always played an integral part of Kerala's history. Our food is an example of the very same and we have offerings for people from all over the world.  Be it famous international restaurant chains or local eateries, we have everything a foodie could ask for prepared with that special Kerala taste to it. The cuisine here caters to vegetarians and non-vegetarians alike. Let the flavours of our past and our future take you on a delightful journey.</p>
+                         </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 item">
+                    <div class="box" style="background-image: url('Images/ayurveda1.jpg'); height: 30rem; width :100%;">
+                      <div class="cover" style="background-color: #BCAAA4">
+                        <h3 class="name text-center home-exp-card-title">Ayurveda</h3>
+                        <p class="description">Ayurveda is an alternative medicine system with historical roots. Therapies are typically based on complex herbal compounds, minerals and metal substances.<br>
+                          Ayurveda treatment starts with an internal purification process, followed by a special diet, herbal remedies, massage therapy, yoga, and meditation. The concepts of universal interconnectedness, the body's constitution (prakriti), and life forces (doshas) are the primary basis of ayurvedic medicine.
+                        </p>
+                       </div>
+                   </div>
+                 </div>
+                 <div class="col-lg-3 item">
+                  <div class="box" style="background-image: url('Images/nature_to_do.jpg'); height: 30rem; width :100%;">
+                    <div class="cover" style="background-color: #FFCC80">
+                      <h3 class="name text-center home-exp-card-title">Nature Walk</h3>
+                      <p class="description">Kerala , The Green Paradise! The lush greenery greets you everywhere. It doesn’t matter whether you are in city, suburban or a rural village, the green flora beckons you. The color green is the color of nature, fertility and of life. It is the color of balance. It symbolizes harmony, well being and growth.</p>
+                  </div>
+                 </div>
+               </div>
+               <div class="col-lg-3 item">
+                <div class="box" style="background-image: url('Images/village-life-experience.jpg'); height: 30rem; width :100%;">
+                  <div class="cover" style="background-color: #FFAB91">
+                    <h3 class="name text-center home-exp-card-title">Village Life</h3>
+                    <p class="description">Kerala is famed for its equally enchanting village life as well, besides the presence of other prominent attractions. Blessed with simplicity, the villagers in the God's own country live their life at a languid pace and cherish each day in life with their hard work, skills and craftsmanship. This Village Life in Kerala tour is meant to enrich a traveller with virgin village lifestyle here. </p>
+                </div>
+               </div>
+             </div>
+           </div>
+                </div>
+                <!-- card set 1 ends -->
+            </div>
+            <div class="carousel-item exp-carousal-height">
+                <!--cardset 2 begins  -->
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-3 item">
+                     <div class="box" style="background-image: url('Images/cultural-experience-18.jpg'); height: 30rem; width :100%;">
+                       <div class="cover" style="background-color: #A5D6A7;">
+                         <h3 class="name text-center home-exp-card-title">Vibrant Festivals of Kerala</h3>
+                         <p class="description">Kerala, a slice of green sandwiched between the Western Ghats and the Arabian Sea, is rich with art, artforms, rituals and festivals. The State owns a centuries-old history and has a long tradition in art and literature. The art forms of Kerala are unique and related to religion, their worship and rituals. Responsible Tourism offers tour packages to experience the cultural life of Kerala.</p>
+                         </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 item">
+                    <div class="box" style="background-image: url('Images/beautiful-backwaters-kerala-66.jpeg'); height: 30rem; width :100%;">
+                      <div class="cover" style="background-color: #BCAAA4">
+                        <h3 class="name text-center home-exp-card-title">Through the Back Waters</h3>
+                        <p class="description">Have you ever gone cruising in a houseboat on the backwaters of Kerala? If you haven't, make sure you do. This is easily one amongst the most remarkable and unique experiences that our state has to offer.<br>
+                          Present day houseboats are huge, slow moving exotic barges used for leisure trips, and are in fact a reworked version of the Kettuvallams of olden times.                  
+                        </p>
+                       </div>
+                   </div>
+                 </div>
+                 <div class="col-lg-3 item">
+                  <div class="box" style="background-image: url('Images/hill-stations-320x180.jpg'); height: 30rem; width :100%;">
+                    <div class="cover" style="background-color: #FFCC80">
+                      <h3 class="name text-center home-exp-card-title">Hill Stations</h3>
+                      <p class="description">Kerala brings to you a magical tryst with nature through its various hills and hill stations. A majority of these places in Kerala are situated on the windward side of the majestic Western Ghats. Enjoy the long chain of lush mist-clad hill stations of Kerala and explore the various plantations, wildlife, flora and fauna that comprise an integral part of this experience.</p>
+                  </div>
+                 </div>
+               </div>
+               <div class="col-lg-3 item">
+                <div class="box" style="background-image: url('Images/artform-320x500.jpg'); height: 30rem; width :100%;">
+                  <div class="cover" style="background-color: #FFAB91">
+                    <h3 class="name text-center home-exp-card-title">Artforms</h3>
+                    <p class="description">Kerala has birthed and nurtured a plethora of art forms over a thousand years. Our shores have watched them evolve and flourish in various shapes and forms. They can be categorizes as performing artforms, ritual artforms, martial arts and folk arts. </p>
+                </div>
+               </div>
+             </div>
+           </div>
+                </div>
+                <!-- card set 2 ends -->
+            </div>
+            <div class="carousel-item exp-carousal-height">
+                <!--cardset 3 begins  -->
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-3 item">
+                     <div class="box" style="background-image: url('Images/monsoon.jpg'); height: 30rem; width :100%;">
+                       <div class="cover" style="background-color: #A5D6A7;">
+                         <h3 class="name text-center home-exp-card-title">Monsoon</h3>
+                         <p class="description">Kerala does not have incessant rains that stop all activity. It rains for a few hours with sunny interludes. Occasionally the rains might stretch on for a few days but sunshine is never far away. These golden interludes provide an equilibrium to life's natural flow
+                          Kerala has mainly two rainy seasons. The Southwest Monsoon that arrives in the month of June is called Edavappathy, as it comes in the middle of the month of Edavam on the Malayalam Calendar.
+                         </p>
+                         </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 item">
+                    <div class="box" style="background-image: url('Images/wildlife.jpg'); height: 30rem; width :100%;">
+                      <div class="cover" style="background-color: #BCAAA4">
+                        <h3 class="name text-center home-exp-card-title">Wildlife</h3>
+                        <p class="description">There are a number of popular wildlife sanctuaries in Kerala housing exotic and rare species of flora and fauna. Nestled in the elaborate forest of the majestic Western Ghats or Sahyadri Ranges in Kerala are  fourteen wildlife sanctuaries and two tiger reserves. Kerala also has six national parks containing protected and endangered species like the Indian Sloth-Bear, Lion-Tailed Macaque, Indian Bison, Bengal Tiger, Nilgiri Tahr etc.                  
+                        </p>
+                       </div>
+                   </div>
+                 </div>
+                 <div class="col-lg-3 item">
+                  <div class="box" style="background-image: url('Images/cherai_beach_kochi20150530082238_179_1.jpg'); height: 30rem; width :100%;">
+                    <div class="cover" style="background-color: #FFCC80">
+                      <h3 class="name text-center home-exp-card-title">Beaches</h3>
+                      <p class="description">Kerala is home to a number of spectacular beaches that will take your breath away. As Kerala is a coastal state, some of the most popular tourist destinations in Kerala are beaches like Kovalam, Varkala, Chowara, Chavakkad, Nattika, Cherai, Kizhunna, Poovar and the list goes on and on. The Kerala coast is replete with exotic resorts and hotels where travellers can spend their time sunbathing, swimming or simply enjoying the stunning view.</p>
+                  </div>
+                 </div>
+               </div>
+               <div class="col-lg-3 item">
+                <div class="box" style="background-image: url('Images/arippara_waterfalls_kozhikode20161219101818_555_1.jpg'); height: 30rem; width :100%;">
+                  <div class="cover" style="background-color: #FFAB91">
+                    <h3 class="name text-center home-exp-card-title">Waterfalls</h3>
+                    <p class="description">Kerala is popular for having numerous majestic waterfalls. These scintillating cascades are famous picnic spots and excursion destinations round the year. The luscious Kerala waterfalls are a sight your eyes will never tire of feasting upon. </p>
+                </div>
+               </div>
+             </div>
+                  </div>
+                </div>
+                <!-- card set 3 ends -->
+           </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Main content stops here -->
+<footer>
+  <div class=" container-fluid navbar-color">
+    <p class="text-center text-white">All rights reserved © Kerala Tourism 2021</p> 
+    <div class="row float-left">
+      <div class="col-lg-4"></div>
+      <div class="col-lg-6 my-auto">
+        <nav class="navbar navbar-expand-lg ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">              
+              <div class="navbar-nav mx-0">
+
+                <h3 class="footer-follow-text">&nbsp;&nbsp;&nbsp;&nbsp;Follow Us &nbsp;</h3>
+                <a href="http://www.youtube.com/keralatourism" target="_blank"><img class="home-ft-height" src="Images/yt.jpg" alt="Home"></a>
+                <a href="https://www.facebook.com/keralatourismofficial" target="_blank"><img class="home-ft-height" src="Images/facebook.png" alt="Home"></a>
+                <a href="http://twitter.com/keralatourism" target="_blank"><img class="home-ft-height" src="Images/twitter.png" alt="Home"></a>
+                <a href="https://www.instagram.com/keralatourism/?hl=en" target="_blank"><img class="home-ft-height" src="Images/instagram-128.jpg" alt="Home"></a>
+                <a href="https://www.linkedin.com/company/keralatourism" target="_blank"><img class="home-ft-height" src="Images/in.png" alt="Home"></a>
+              </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+    integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+    integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

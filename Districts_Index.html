@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kerala Tourism</title>
+  <link rel="icon" href="Images/150px-Kerala_God's_Own_Country_Logo.svg.png" type="image/icon type">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Navigation bar starts here -->
+  <header>
+    <div class="navbar-color">
+      <div class="row">
+        <div class="col-lg-6">
+          <!-- Image and text -->
+          <nav class="navbar navbar-light navbar-color">
+            <div class="container">
+              <a class="navbar-brand" href="index.html">
+                <img class="home-log-height" src="Images/150px-Kerala_God's_Own_Country_Logo.svg.png" alt="Home">
+              </a>
+            </div>
+          </nav>
+        </div>
+        <div class="col-lg-6 my-auto">
+          <!-- Navigation Link -->
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                  <a class="nav-link text-white" href="index.html">Home</a>
+                  <a class="nav-link text-white" href="KnowUS.html">Know Us</a>
+                  <a class="nav-link active" href="Districts_index.html">Districts at a Glance</a>
+                  <a class="nav-link text-white" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+                  <a class="nav-link text-white" href="SignUp.html">Sign Up</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Navigation Bar ends here -->
+
+<!-- Modal Login starts -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content" style="width: 20rem;">
+      <div class="modal-body">
+        <form>
+          <div class="d-grid mb-1">
+            <a href="#" class="btn btn-primary btn-block py-2 " style="background-color: #3b5998" >
+              <span class="font-weight-bold">Login with Facebook</span>
+            </a>
+          </div>
+          <div class="d-grid mb-1">
+            <a href="#" class="btn btn-primary btn-block py-2" style="background-color: #dd4b39">
+              <span class="font-weight-bold">Login with Google</span>
+            </a>
+          </div>
+   
+          <div class="form-group col-lg-12 mx-auto d-flex align-items-center my-4">
+            <div class="border-bottom w-100 ml-5"></div>
+            <span class="px-2 small text-muted font-weight-bold text-muted">or</span>
+            <div class="border-bottom w-100 mr-5"></div>
+          </div>
+
+       <!-- Email input -->
+          <div class="form-outline mb-3">
+              <input type="text" id="form2Example1" class="form-control" placeholder="User Name"/>
+          </div>
+      
+          <!-- Password input -->
+          <div class="form-outline mb-3">
+             <input type="password" id="form2Example2" class="form-control" placeholder="Password"/>
+          </div>
+        
+          <!-- 2 column grid layout for inline styling -->
+          <div class="row mb-3">
+            <div class="col d-flex justify-content-center">
+              <!-- Checkbox -->
+              <div class="form-check col">
+                <input class="form-check-input" type="checkbox" value="" id="form2Example3" unchecked/>
+                <label class="form-check-label" for="form2Example3"> Remember me </label>
+              </div>
+            </div>
+        
+            <div class="col">
+              <!-- Simple link -->
+              <a href="ForgetPassword.html" class="login-modal-anchor">Forgot password?</a>
+            </div>
+          </div>
+        
+          <!-- Submit button -->
+          <div class="d-grid">
+            <button type="submit" class="btn btn-primary btn-floating mb-4 ">Login</button>
+          </div>
+
+        
+          <!-- Register buttons -->
+          <div class="text-center">
+            <p>Not a member? <a href="SignUp.html" class="login-modal-anchor">Sign Up</a></p>
+            <!-- dividier -->
+          </div>
+        </form>
+      </div>
+   </div>
+  </div>
+</div>
+<!-- Login Modal ends -->
+
+  <!-- Main Content starts here --> 
+<section>
+    <!-- District Title  -->
+    <h3 class="card-title text-center district-title-name mb-0 my-auto pt-2 ">A Walk through the Districts of Kerala</h3> 
+    <!-- index line 1-->
+    <div class="container-fluid  district-i-container-blue p-4 rounded">
+      <div class="row district-i-row-blue pt-3 rounded">
+        <div class="col-lg-3 item">
+          <a class ="district-i-card-anchor" href="Alappuzha.html" >
+          <div class="card district-i-card ">
+            <img class="box" src="Images/alpy-beach-guide-best-things-to-do-.jpeg" class="card-img-top hover-overlay ripple" data-mdb-ripple-color="light" alt="...">
+            <div class="cover text-center my-auto" style="background-color: #C8E6C9">
+               <p class="description ">Alappuzha is referred to as the <b>Venice of the East</b>. Alappuzha is also famous for its boat races, houseboat holidays, beaches, marine products and coir industry. Lower areas of the district, known as Kuttanad, is one of the few places in the world where farming is done below sea level.</p>
+            </div>
+            <div class="card-body district-i-card-content">
+                <h5 class="card-title text-center district-to-do-card-title">Alappuzha</h5>
+            </div>
+          </div> 
+          </a>
+        </div>
+        <div class="col-lg-3 item">
+          <a class ="district-i-card-anchor" href="Ernakulam.html" >
+          <div class="card district-i-card">
+            <img class="box" src="Images/ekm_chinese_fishing-net.jpg" class="card-img-top hover-overlay ripple" data-mdb-ripple-color="light" alt="...">
+            <div class="cover text-center my-auto" style="background-color: #C8E6C9">
+               <p class="description ">Ernakulam is referred to as the  <b>The Queen of Arabian Sea</b>. Ernakulam is one of the fastest growing places in Kerala. It is an important commercial and residential area. Cochin Carnival and Sivarathri festival celebrated on the bank of Periyar river, attract tourists from all around the world. Ernakulam is considered as the commercial capital of Kerala.</p>
+            </div>
+            <div class="card-body district-i-card-content">
+                <h5 class="card-title text-center district-to-do-card-title">Ernakulam</h5>
+            </div>
+          </div> 
+          </a>
+        </div>
+        <div class="col-lg-3 item">
+          <a class ="district-i-card-anchor" href="Idukki.html" >
+          <div class="card district-i-card">
+            <img class="box" src="Images/idk_index_img_edit.jpg"  class="card-img-top hover-overlay ripple" data-mdb-ripple-color="light" alt="...">
+              <div class="cover text-center my-auto" style="background-color: #C8E6C9">
+                <p class="description ">Idukki is the spice garden of Kerala. With the Sahya ranges occupying most of the geographical area, Idukki is one of the most nature rich areas of Kerala. High ranges and wooded valleys of Idukki offers diverse attractions like wildlife sanctuaries, hill stations, spice plantation tours, jungle walks and safaris, mountain treks, elephant rides etc.</p>
+              </div>
+             <div class="card-body district-i-card-content">
+              <h5 class="card-title text-center district-to-do-card-title">Idukki</h5>
+             </div>
+          </div> 
+        </a>
+      </div>
+      <div class="col-lg-3 item">
+        <a class ="district-i-card-anchor" href="Kannur.html" >
+        <div class="card district-i-card">
+          <img class="box" src="Images/Kannur_about_us_edit.jpg" class="card-img-top hover-overlay ripple" data-mdb-ripple-color="light" alt="...">
+          <div class="cover text-center my-auto" style="background-color: #C8E6C9">
+             <p class="description ">Kannur is referred to as the  <b>City of Looms and Lores</b>.  Kannur district derived its name from the location of its headquarters at Kannur town. Kannur was formerly known as Cannanore. Kannur is popularly known as the city of Looms and Lores. Kannur is the land of the famous performing art Theyyam.</p>
+          </div>
+          <div class="card-body district-i-card-content">
+              <h5 class="card-title text-center district-to-do-card-title">Kannur</h5>
+          </div>
+        </div> 
+        </a>
+      </div>
+      </div>
+    </div>
+ 
+    <!-- index line 2 -->
+    <div class="container-fluid  district-i-container-red p-4 rounded">
+      <div class="row district-i-row-red pt-3 rounded">
+        <div class="col-lg-3 item">
+          <a class ="district-i-card-anchor" href="Kasaragod.html" >
+          <div class="card district-i-card">
+            <img class="box" src="Images/kzd_bekal_fort.jpg" class="card-img-top hover-overlay ripple" data-mdb-ripple-color="light" alt="...">
+            <div class="cover text-center my-auto" style="background-color: #D1C4E9">
+               <p class="description ">Kasaragod is referred to as the <B>Land of Seven Languages</B>. Forts, rivers, hills and beautiful beaches of Kasargod is world famous for its coir and handloom industries. Kasargod is the northern most district of Kerala. Kasaragod displays a variety of styles in temple architecture. The largest fort in the state, the Bekal fort is in this district.</p>
+            </div>
+            <div class="card-body district-i-card-content">
+                <h5 class="card-title text-center district-to-do-card-title">Kasargod</h5>
+            </div>
+          </div> 
+          </a>
+        </div>
+        <div class="col-lg-3 item">
+          <a class ="district-i-card-anchor" href="Kollam.html" >
+          <div class="card district-i-card">
+            <img class="box" src="Images/kollam_about_us_1.jpg" class="card-img-top hover-overlay ripple" data-mdb-ripple-color="light" alt="...">
+            <div class="cover text-center my-auto" style="background-color: #D1C4E9">
+               <p class="description ">Kollam is referred to as the <B>Prince of the Arabian Sea</B>. Kollam is the place which takes the credit for being the hub of the countrys cashew trading and processing industry. Affording an impeccable blend of scenic surrounding, tradition and hospitality, Kollam is often referred to as the dreamland of Kerala. </p>            
+              </div>
+            <div class="card-body district-i-card-content">
+                <h5 class="card-title text-center district-to-do-card-title">Kollam</h5>
+            </div>
+          </div> 
+          </a>
+        </div>
+        <div class="col-lg-3 item">
+          <a class ="district-i-card-anchor" href="Kottayam.html" >
+          <div class="card district-i-card">
+            <img class="box" src="Images/kottayam_about_us_1.jpg" class="card-img-top hover-overlay ripple" data-mdb-ripple-color="light" alt="...">
+              <div class="cover text-center my-auto" style="background-color: #D1C4E9">
+                <p class="description ">Kottayam is referred to as the <B>City of letters</B>.Kottayam is an important trading centre of commercial crops, panoramic backwater stretches, lush paddy fields, high lands extensive rubber plantations and total literate people which have given this district the enviable title ‘ the land of letters, latex and  lakes’. Kottayam is also the first city in to launch an ‘Eco city project’.</p>
+              </div>
+             <div class="card-body district-i-card-content">
+              <h5 class="card-title text-center district-to-do-card-title">Kottayam</h5>
+             </div>
+          </div> 
+        </a>
+      </div>
+      <div class="col-lg-3 item">
+        <a class ="district-i-card-anchor" href="Kozhikode.html" >
+        <div class="card district-i-card">
+          <img class="box" src="Images/calicut_about_us_1.jpg" class="card-img-top hover-overlay ripple" data-mdb-ripple-color="light" alt="...">
+          <div class="cover text-center my-auto" style="background-color: #D1C4E9">
+            <p class="description ">Kozhikode is referred to as the <B>City of Spices</B>.Being a part of the most beautiful state in India, Kozhikode has been ranked the second best city in India to reside in. Also known as Calicut, this beautiful city boasts of beautiful beaches, parks, temples, churches, sanctuaries, hillocks, museums, wildlife, sculptures, rivers and lots more. It is the prominent trade and commerce center in Kerala. </p>
+          </div>
+          <div class="card-body district-i-card-content">
+              <h5 class="card-title text-center district-to-do-card-title">Kozhikode</h5>
+          </div>
+        </div> 
+        </a>
+      </div>
+      </div>
+    </div>
+
+    <!-- index line 3 -->
+    <div class="container-fluid  district-i-container-blue p-4 rounded">
+      <div class="row district-i-row-blue pt-3 rounded">
+        <div class="col-lg-3 item">
+          <a class ="district-i-card-anchor" href="Malapuram.html" >
+          <div class="card district-i-card">
+            <img class="box" src="Images/malapuram_about_us_1.jpg" class="card-img-top hover-overlay ripple" data-mdb-ripple-color="light" alt="...">
+            <div class="cover text-center my-auto" style="background-color: #C8E6C9">
+              <p class="description ">Malappuram is referred to as the <B>Soccer Capital</B>.Being a part of the most beautiful state in India, Kozhikode has been ranked the second best city in India to reside in. Also known as Calicut, this beautiful city boasts of beautiful beaches, parks, temples, churches, sanctuaries, hillocks, museums, wildlife, sculptures, rivers and lots more. It is the prominent trade and commerce center in Kerala. </p>
+            </div>
+            <div class="card-body district-i-card-content">
+                <h5 class="card-title text-center district-to-do-card-title">Malappuram</h5>
+            </div>
+          </div> 
+          </a>
+        </div>
+        <div class="col-lg-3 item">
+          <a class ="district-i-card-anchor" href="Palakkad.html" >
+          <div class="card district-i-card">
+            <img class="box" src="Images/pkd_about_us.jpg" class="card-img-top hover-overlay ripple" data-mdb-ripple-color="light" alt="...">
+            <div class="cover text-center my-auto" style="background-color: #C8E6C9">
+               <p class="description ">Palakkad is referred to as the <B>Rice bowl of Kerala</B>.Palakkad draws one of the most picturesque topographies in the state map, with its lush paddy farms, forests rich in flora and wildlife, national parks, monuments, dams and reservoirs that remain tourist attractions throughout the year. The district is a trekker’s delight offering nature trails and plenty of adventure spots to be explored.</p>
+            </div>
+            <div class="card-body district-i-card-content">
+                <h5 class="card-title text-center district-to-do-card-title">Palakkad</h5>
+            </div>
+          </div> 
+          </a>
+        </div>
+        <div class="col-lg-3 item">
+          <a class ="district-i-card-anchor" href="Pathanamthitta.html" >
+          <div class="card district-i-card">
+            <img class="box" src="Images/pta_about-us_1.jpg" class="card-img-top hover-overlay ripple" data-mdb-ripple-color="light" alt="...">
+              <div class="cover text-center my-auto" style="background-color: #C8E6C9">
+                <p class="description ">A hilly province of pristine splendour, the district of Pathanamthitta is hailed as the headquarters of pilgrim worship in Kerala. </p>
+              </div>
+             <div class="card-body district-i-card-content">
+              <h5 class="card-title text-center district-to-do-card-title">Pathanamthitta</h5>
+             </div>
+          </div> 
+        </a>
+      </div>
+      <div class="col-lg-3 item">
+        <a class ="district-i-card-anchor" href="Thiruvanthapuram.html" >
+        <div class="card district-i-card">
+          <img class="box" src="Images/tvm_about_us_1.jpg" class="card-img-top hover-overlay ripple" data-mdb-ripple-color="light" alt="...">
+          <div class="cover text-center my-auto" style="background-color: #C8E6C9">
+             <p class="description ">Thiruvananthapuram is referred to as the <B>The Royal City of Kerala</B>. A gracious and evergreen city spread over seven hills, Thiruvananthapuram, capital of Kerala, is steeped in history and culture. Located in the extreme south of the state, its shores are washed by the warm waters of the Arabian Sea. </p>
+          </div>
+          <div class="card-body district-i-card-content">
+              <h5 class="card-title text-center district-to-do-card-title">Thiruvananthapuram</h5>
+          </div>
+        </div> 
+        </a>
+      </div>
+      </div>
+    </div>
+ 
+    <!-- index line 4-->
+    <div class="container-fluid  district-i-container-red p-4 rounded">
+      <div class="row district-i-row-red pt-3 rounded">
+        <div class="col-lg-3 item"></div>
+        <div class="col-lg-3 item">
+          <a class ="district-i-card-anchor" href="Thrissur.html" >
+          <div class="card district-i-card">
+            <img class="box" src="Images/thrissur_about_us_1.jpg" class="card-img-top hover-overlay ripple" data-mdb-ripple-color="light" alt="...">
+            <div class="cover text-center my-auto" style="background-color: #D1C4E9">
+               <p class="description ">Thrissur is referred to as the <B>Land of Poorams</B>. The cultural capital of Kerala, the Poorams or temple festivals in Thrissur draw in thousands of people every single year as these carnivals encapsulate every single part of Kerala's rich heritage. These are a hotbed of folk art performances and heritage tours that will give you an in depth look into some of the grandest traditions of the State. </p>
+            </div>
+            <div class="card-body district-i-card-content">
+                <h5 class="card-title text-center district-to-do-card-title">Thrissur</h5>
+            </div>
+          </div> 
+          </a>
+        </div>
+        <div class="col-lg-3 item">
+          <a class ="district-i-card-anchor" href="Wayanad.html" >
+          <div class="card district-i-card">
+            <img class="box" src="Images/way_about_us_2.jpg" class="card-img-top hover-overlay ripple" data-mdb-ripple-color="light" alt="...">
+            <div class="cover text-center my-auto" style="background-color: #D1C4E9">
+               <p class="description ">Wayanad, the green paradise is nestled among the mountains of the Western Ghats, forming the border world of the greener part of Kerala. Clean and pristine, enchanting and hypnotizing, this land is filled with history and culture. Located at a distance of 76 km. from wayanadthe sea shores of Kozhikode, this verdant hill station is full of plantations, forests and wildlife.</p>
+            </div>
+            <div class="card-body district-i-card-content">
+                <h5 class="card-title text-center district-to-do-card-title">Wayanad</h5>
+            </div>
+          </div> 
+          </a>
+        </div>
+        <div class="col-lg-3 item"></div>
+      </div>
+    </div>
+</section>
+<!-- Main content stops here -->
+<footer>
+  <div class=" container-fluid navbar-color">
+    <p class="text-center text-white">All rights reserved © Kerala Tourism 2021</p> 
+    <div class="row float-left">
+      <div class="col-lg-4"></div>
+      <div class="col-lg-6 my-auto">
+        <nav class="navbar navbar-expand-lg ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">              
+              <div class="navbar-nav mx-0">
+
+                <h3 class="footer-follow-text">&nbsp;&nbsp;&nbsp;&nbsp;Follow Us &nbsp;</h3>
+                <a href="http://www.youtube.com/keralatourism" target="_blank"><img class="home-ft-height" src="Images/yt.jpg" alt="Home"></a>
+                <a href="https://www.facebook.com/keralatourismofficial" target="_blank"><img class="home-ft-height" src="Images/facebook.png" alt="Home"></a>
+                <a href="http://twitter.com/keralatourism" target="_blank"><img class="home-ft-height" src="Images/twitter.png" alt="Home"></a>
+                <a href="https://www.instagram.com/keralatourism/?hl=en" target="_blank"><img class="home-ft-height" src="Images/instagram-128.jpg" alt="Home"></a>
+                <a href="https://www.linkedin.com/company/keralatourism" target="_blank"><img class="home-ft-height" src="Images/in.png" alt="Home"></a>
+              </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+    integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+    integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

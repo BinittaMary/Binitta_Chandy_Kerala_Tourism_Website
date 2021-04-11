@@ -413,3 +413,38 @@ z-index:15;
 }
 
 
+/****  validation  ***/
+.box {
+    width: 100px;
+    height: 30px;
+    background: rgba(255, 130, 165, 0.9);
+  }
+  
+  .balloonError {
+    display: table;
+    position: relative;
+    color: red;
+    border: 2px solid red;
+    padding: 0 0.5em;
+    border-radius: 4px;
+    margin-bottom: 9px;
+  }
+  .balloonError::before, .balloon::after {
+    position: absolute;
+    content: "";
+    border: 10px solid transparent;
+    border-bottom-width: 0;
+    left: 30px;
+  }
+  .balloonError:before {
+    border-top-color: red;
+    top: 45px;
+  }
+  .balloonError:after {
+    border-top-color: #fff;
+    top: 25px;
+    z-index: 1;
+  }
+  
+  
+  

@@ -423,8 +423,9 @@ z-index:15;
   .balloonError {
     display: table;
     position: relative;
-    color: red;
-    border: 2px solid red;
+    background-color: #F8E0E0;
+    color: #DF0101;
+    border: 2px solid #DF0101;
     padding: 0 0.5em;
     border-radius: 4px;
     margin-bottom: 9px;
@@ -437,7 +438,7 @@ z-index:15;
     left: 30px;
   }
   .balloonError:before {
-    border-top-color: red;
+    border-top-color: #DF0101;
     top: 45px;
   }
   .balloonError:after {
@@ -446,5 +447,56 @@ z-index:15;
     z-index: 1;
   }
   
+  .balloonWarning {
+    display: table;
+    position: relative;
+    color: #b3b300;
+    background-color: #F5F6CE;
+    border: 2px solid #AEB404;
+    padding: 0 0.5em;
+    border-radius: 4px;
+    margin-bottom: 9px;
+  }
+  .balloonWarning::before, .balloon::after {
+    position: absolute;
+    content: "";
+    border: 10px solid transparent;
+    border-bottom-width: 0;
+    left: 30px;
+  }
+  .balloonWarning:before {
+    border-top-color:#b3b300;
+    top: 45px;
+  }
+  .balloonWarning:after {
+    border-top-color: #fff;
+    top: 25px;
+    z-index: 1;
+  }
   
-  
+  .balloonStrong {
+    display: table;
+    position: relative;
+    color: #044903;
+    background-color: #e6ffe6;
+    border: 2px solid #044903;
+    padding: 0 0.5em;
+    border-radius: 4px;
+    margin-bottom: 9px;
+  }
+  .balloonStrong::before, .balloon::after {
+    position: absolute;
+    content: "";
+    border: 10px solid transparent;
+    border-bottom-width: 0;
+    left: 30px;
+  }
+  .balloonStrong:before {
+    border-top-color: #044903;
+    top: 45px;
+  }
+  .balloonStrong:after {
+    border-top-color: #fff;
+    top: 25px;
+    z-index: 1;
+  }

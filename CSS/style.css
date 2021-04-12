@@ -414,11 +414,11 @@ z-index:15;
 
 
 /****  validation  ***/
-.box {
+/* .box {
     width: 100px;
     height: 30px;
     background: rgba(255, 130, 165, 0.9);
-  }
+  } */
   
   .balloonError {
     display: table;

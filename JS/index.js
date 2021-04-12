@@ -121,7 +121,7 @@ function validatePasswordStrength(elementId, SpanID, conext)///passing element a
 
     var p = document.getElementById(SpanID);
     let q= document.getElementById(elementId);
-    if (strength[strengthIndicator]=='Very Weak')  (strength[strengthIndicator]=='Weak')
+    if (strength[strengthIndicator]=='Very Weak')  
         {
         p.innerHTML ="<div class='balloonError'><p style='color: red'>Weak Passsword</p></div>";
         q.style.border="Red solid 2px";  

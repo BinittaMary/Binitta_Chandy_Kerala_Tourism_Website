@@ -253,3 +253,38 @@ function validateSignUpForm()
         return false; 
       }
 }
+
+function ValidateForgetPasswordData()
+{
+    console.log("insert SignUpForm"); 
+    let vEmail = document.getElementById('ForgetPwdEmail').value;
+    let spanElem= document.getElementById('ForgetPwdEmailMsg');
+  
+    if (vEmail=="") 
+    {
+        console.log("empty if"); 
+        let sHTML = "<div style ='color:red'><p>Email field is empty.</p> ";
+        spanElem.innerHTML= sHTML;
+       return false;
+    }
+    else
+    {
+      console.log("valid case");   
+      spanElem.innerHTML= "<span id='ForgetPwdEmailMsg'></span> ";  
+      return true;
+    }
+}
+
+
+function ValidateForgetPasswordForm()
+{   
+       if ((ValidateForgetPasswordData() && validateEmail('ForgetPwdEmail','ForgetPwdEmailSpan')) == true)
+      {
+           return true;  
+      }
+    else
+      {
+        window.scrollTo(0, 0);  
+        return false; 
+      }
+}

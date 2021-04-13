@@ -249,6 +249,7 @@ function validateSignUpForm()
       }
     else
       {
+        window.scrollTo(0, 0);  
         return false; 
       }
 }

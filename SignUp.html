@@ -129,22 +129,25 @@
   <div class="col-lg-4"></div>
   <!-- sign in form -->
   <div class="col-lg-4  p-5 m-3 signup-row rounded">
-    <form class="row g-3">   
-      <div class="col-md-12">
-        <label for="SignUpEmailLabel" class="form-label">Email</label>
+    <form class="row g-3"  onsubmit="return validateSignUpForm()" action="index.html">   
+        <span id="SignUpAlertMsg"></span> 
+        <div class="col-md-12">
+        <label for="SignUpEmailLabel" class="form-label">Email</label><label class="form-label text-danger">&nbsp;* </label>
         <span id="SignUpEmailSpan"></span>
-        <input type="email" class="form-control" oninput="validateEmail('SignUpEmail','SignUpEmailSpan' )" id="SignUpEmail" placeholder="Email Address">
+        <input type="email" class="form-control" oninput="validateEmail('SignUpEmail','SignUpEmailSpan')" id="SignUpEmail" placeholder="Email Address">
       </div>
       <div class="col-md-12">
-        <label for="inputPassword4" class="form-label">Password</label>
+        <label for="inputPassword4" class="form-label">Password</label><label class="form-label text-danger">&nbsp;* </label>
         <span id="SignUpPasswordSpan"></span>
         <input type="password" class="form-control" id="SignUpPassword" placeholder="Password" oninput="validatePasswordStrength('SignUpPassword','SignUpPasswordSpan',1)" onfocusout="validatePasswordStrength('SignUpPassword','SignUpPasswordSpan',2)">
+        <label for="PasswordHint" class="form-label text-secondary">Make sure it's at least 8 characters including a number, a uppercase letter and a lowercase letter.</label>
       </div>
 
       <div class="col-12">
-        <label for="phonenumber" class="form-label">Phone Number</label>
+        <label for="phonenumber" class="form-label">Phone Number</label><label class="form-label text-danger">&nbsp;* </label>
         <span id="PhoneNumberSpan"></span>
-        <input type="text" class="form-control" id="phonenumber" placeholder="XXX XXX XXXX/XXX.XXX.XXXX/XXX-XXX-XXXX Format" oninput="validatePhone('phonenumber','PhoneNumberSpan' )">
+        <input type="text" class="form-control" id="phonenumber" placeholder="Phone Number" oninput="validatePhone('phonenumber','PhoneNumberSpan' )">
+        <!-- <label for="PasswordHint" class="form-label text-secondary">Make sure it's in any of the format XXXXXXXXXX/XXX XXX XXXX/XXX.XXX.XXXX/XXX-XXX-XXXX</label> -->
       </div>
       
       <div class="col-12">
@@ -187,7 +190,8 @@
         </div>
       </div>
       <div class="col-12 d-grid">
-        <button type="submit" class="btn btn-primary" onclick="validateEmail()">Sign In</button>
+        <label for="PasswordHint" class="form-label text-danger">Fields marked with * are mandatory</label> 
+        <button type="submit" class="btn btn-primary" >Sign In</button>
       </div>
 
     <!-- Divider -->          

@@ -53,13 +53,14 @@
     </div>
   </header>
   <!-- Navigation Bar ends here -->
+  
 
 <!-- Modal Login starts -->
 <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content" style="width: 20rem;">
       <div class="modal-body">
-        <form>
+        <form onsubmit="return validateLoginForm()" action="index.html">
           <div class="d-grid mb-1">
             <a href="#" class="btn btn-primary btn-block py-2 " style="background-color: #3b5998" >
               <span class="font-weight-bold">Login with Facebook</span>
@@ -76,7 +77,7 @@
             <span class="px-2 small text-muted font-weight-bold text-muted">or</span>
             <div class="border-bottom w-100 mr-5"></div>
           </div>
-
+          <span id="LoginAlertMsg"></span> 
        <!-- Email input -->
           <div class="form-outline mb-3">            
               <span id="LoginEmailSpan"></span>
@@ -85,7 +86,8 @@
       
           <!-- Password input -->
           <div class="form-outline mb-3">
-             <input type="password" id="form2Example2" class="form-control" placeholder="Password"/>
+            <span id="LoginPwdSpan"></span>
+            <input type="password" id="LoginPwd" class="form-control" placeholder="Password" oninput="validatePasswordStrength('LoginPwd','LoginPwdSpan',1)" onfocusout="validatePasswordStrength('LoginPwd','LoginPwdSpan',2)"/>
           </div>
         
           <!-- 2 column grid layout for inline styling -->
@@ -106,7 +108,7 @@
         
           <!-- Submit button -->
           <div class="d-grid">
-            <button type="submit" class="btn btn-primary btn-floating mb-4 ">Login</button>
+            <button  class="btn btn-primary btn-floating mb-4 " id="submit" onclick="validateLoginForm()">Login</button>
           </div>
 
         
@@ -116,6 +118,9 @@
             <!-- dividier -->
           </div>
         </form>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
       </div>
    </div>
   </div>

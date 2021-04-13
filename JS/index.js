@@ -8,7 +8,6 @@ if(EmailVar.value.match(mailformat))
     p.innerHTML ="<span id='"+SpanID+"'>"+"</span>";
     let q= document.getElementById(elementId);
     q.style.border="blue solid 0px";
-    document.form1.SignUpEmail.focus();
     return true;
     }
 else
@@ -17,7 +16,6 @@ else
     p.innerHTML ="<div class='balloonError'><p>Invalid Email Address!!</p></div>";
     let q= document.getElementById(elementId);
     q.style.border="Red solid 2px";
-    document.form1.SignUpEmail.focus();
     return false;
     }   
 }
@@ -33,7 +31,6 @@ if(phNbrVar.value.match(phoneNumberFormat))
     p.innerHTML ="<span id='"+SpanID+"'>"+"</span>";
     let q= document.getElementById(elementId);
     q.style.border="blue solid 0px";
-    document.form1.SignUpEmail.focus();
     return true;
     }
 else
@@ -42,7 +39,6 @@ else
     p.innerHTML ="<div class='balloonError'><p>Invalid Phone Number!!</p></div>";
     let q= document.getElementById(elementId);
     q.style.border="Red solid 2px";
-    document.form1.SignUpEmail.focus();
     return false;
     }   
 }
@@ -58,7 +54,6 @@ if(pwdVar.value.match(pwdFormat))
     p.innerHTML ="<span id='"+SpanID+"'>"+"</span>";
     let q= document.getElementById(elementId);
     q.style.border="blue solid 0px";
-    document.form1.SignUpEmail.focus();
     return true;
     }
 else
@@ -67,7 +62,6 @@ else
     p.innerHTML ="<div class='balloonError'><p>Invalid password!!</p></div>";
     let q= document.getElementById(elementId);
     q.style.border="Red solid 2px";
-    document.form1.SignUpEmail.focus();
     return false;
     }   
 }
@@ -125,21 +119,25 @@ function validatePasswordStrength(elementId, SpanID, conext)///passing element a
         {
         p.innerHTML ="<div class='balloonError'><p style='color: red'>Weak Passsword</p></div>";
         q.style.border="Red solid 2px";  
+        return false; 
         }
     if (strength[strengthIndicator]=='Weak')
         {
         p.innerHTML ="<div class='balloonError'><p style='color: red'>Weak Password</p></div>";
         q.style.border="Red solid 2px";   
+        return false; 
         }  
    if (strength[strengthIndicator]=='Medium') 
        {
-       p.innerHTML ="<div class='balloonWarning'><p style='color: #AEB404'>Medium Password</p></div>";
+       p.innerHTML ="<div class='balloonWarning'><p style='color: #FF7043'>Medium Password</p></div>";
        q.style.border="yellow solid 2px"; 
+       return false; 
        }
    if  (strength[strengthIndicator]=='Strong')
        {
-       p.innerHTML ="<div class='balloonWarning'><p style='color: #AEB404'>Medium Password</p></div>";
+       p.innerHTML ="<div class='balloonWarning'><p style='color: #FF7043'>Medium Strength Password</p></div>";
        q.style.border="yellow solid 2px";  
+       return false; 
        }
     if (strength[strengthIndicator]=='Very Strong')
     {
@@ -155,6 +153,102 @@ function validatePasswordStrength(elementId, SpanID, conext)///passing element a
         q.style.border="Green solid 0px";   
         console.log("conext :2");           
        }
+    return true; 
     }
-    return true;   
+  
+}
+
+
+
+function validateLoginData()
+{
+    console.log("insert validateLoginForm"); 
+    let vEmail = document.getElementById('LoginEmail').value;
+    let vPwd   = document.getElementById('LoginPwd').value;
+    let spanElem= document.getElementById('LoginAlertMsg');
+  
+    if ((vEmail=="") ||(vPwd=="") )
+    {
+        console.log("empty if"); 
+        let sHTML = "<div style ='  color:red '><p>The following field(s) are empty :</p> <ul>";
+        if (vEmail=="")
+         {
+            sHTML = sHTML+"<li>Email</li>";  
+         }
+         if (vPwd=="")
+         {
+            sHTML = sHTML+"<li>Password</li>";  
+         } 
+         sHTML= sHTML+"</ul></div>";
+         console.log(sHTML);      
+         spanElem.innerHTML= sHTML;
+       return false;
+    }
+    else
+    {
+        console.log("valid case");   
+      spanElem.innerHTML= "<span id='LoginAlertMsg'></span> ";  
+      return true;
+    }
+}
+
+function validateLoginForm()
+{   
+       if ((validateLoginData() && validateEmail('LoginEmail','LoginEmailSpan' )&& validatePasswordStrength('LoginPwd','LoginPwdSpan',2)) == true)
+      {
+           return true;  
+      }
+    else
+      {
+        return false; 
+      }
+}
+
+
+function validateSignUpData()
+{
+    console.log("insert SignUpForm"); 
+    let vEmail = document.getElementById('SignUpEmail').value;
+    let vPwd   = document.getElementById('SignUpPassword').value;
+    let vPhNbr = document.getElementById('phonenumber').value;
+    let spanElem= document.getElementById('SignUpAlertMsg');
+  
+    if ((vEmail=="") ||(vPwd=="")||(vPhNbr=="") )
+    {
+        console.log("empty if"); 
+        let sHTML = "<div style ='color:red'><p>The following field(s) are empty :</p> <ul>";
+        if (vEmail=="")
+         {
+            sHTML = sHTML+"<li>Email</li>";  
+         }
+         if (vPwd=="")
+         {
+            sHTML = sHTML+"<li>Password</li>";  
+         } 
+         if (vPhNbr=="")
+         {
+            sHTML = sHTML+"<li>Phone Number</li>";  
+         }          sHTML= sHTML+"</ul></div>";
+         console.log(sHTML);      
+         spanElem.innerHTML= sHTML;
+       return false;
+    }
+    else
+    {
+      console.log("valid case");   
+      spanElem.innerHTML= "<span id='SignUpAlertMsg'></span> ";  
+      return true;
+    }
+}
+
+function validateSignUpForm()
+{   
+       if ((validateSignUpData() && validateEmail('SignUpEmail','SignUpEmailSpan') && validatePasswordStrength('SignUpPassword','SignUpPasswordSpan',2) && validatePhone('phonenumber','PhoneNumberSpan' )) == true)
+      {
+           return true;  
+      }
+    else
+      {
+        return false; 
+      }
 }

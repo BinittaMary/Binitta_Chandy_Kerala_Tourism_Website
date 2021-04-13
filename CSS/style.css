@@ -450,9 +450,9 @@ z-index:15;
   .balloonWarning {
     display: table;
     position: relative;
-    color: #b3b300;
-    background-color: #F5F6CE;
-    border: 2px solid #AEB404;
+    color: #FF7043;
+    background-color: #FBE9E7;
+    border: 2px solid #FF7043;
     padding: 0 0.5em;
     border-radius: 4px;
     margin-bottom: 9px;
@@ -465,7 +465,7 @@ z-index:15;
     left: 30px;
   }
   .balloonWarning:before {
-    border-top-color:#b3b300;
+    border-top-color:#FF7043;
     top: 45px;
   }
   .balloonWarning:after {

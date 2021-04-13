@@ -59,7 +59,7 @@
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content" style="width: 20rem;">
       <div class="modal-body">
-        <form>
+        <form onsubmit="return validateLoginForm()" action="index.html">
           <div class="d-grid mb-1">
             <a href="#" class="btn btn-primary btn-block py-2 " style="background-color: #3b5998" >
               <span class="font-weight-bold">Login with Facebook</span>
@@ -76,19 +76,19 @@
             <span class="px-2 small text-muted font-weight-bold text-muted">or</span>
             <div class="border-bottom w-100 mr-5"></div>
           </div>
-
+          <span id="LoginAlertMsg"></span> 
        <!-- Email input -->
-          <div class="form-outline mb-3">
-              <input type="text" id="Email" class="form-control col d-flex justify-content-center" placeholder="Email"/>
+          <div class="form-outline mb-3">            
+              <span id="LoginEmailSpan"></span>
+              <input type="text" id="LoginEmail" oninput="validateEmail('LoginEmail','LoginEmailSpan' )"  class="form-control" placeholder="Email Address"/>
           </div>
       
           <!-- Password input -->
-          <div class="row mb-3">
-            <div class="form-outline mb-3">
-              <input type="password" id="Password" class="form-control" placeholder="Password"/>
-            </div>
+          <div class="form-outline mb-3">
+            <span id="LoginPwdSpan"></span>
+            <input type="password" id="LoginPwd" class="form-control" placeholder="Password" oninput="validatePasswordStrength('LoginPwd','LoginPwdSpan',1)" />
           </div>
-
+        
           <!-- 2 column grid layout for inline styling -->
           <div class="row mb-3">
             <div class="col d-flex justify-content-center">
@@ -107,7 +107,7 @@
         
           <!-- Submit button -->
           <div class="d-grid">
-            <button type="submit" class="btn btn-primary btn-floating mb-4 ">Login</button>
+            <button  class="btn btn-primary btn-floating mb-4 " id="submit" onclick="validateLoginForm()">Login</button>
           </div>
 
         
@@ -117,6 +117,9 @@
             <!-- dividier -->
           </div>
         </form>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
       </div>
    </div>
   </div>
@@ -134,12 +137,12 @@
         <div class="col-md-12">
         <label for="SignUpEmailLabel" class="form-label">Email</label><label class="form-label text-danger">&nbsp;* </label>
         <span id="SignUpEmailSpan"></span>
-        <input type="email" class="form-control" oninput="validateEmail('SignUpEmail','SignUpEmailSpan')" id="SignUpEmail" placeholder="Email Address">
+        <input type="text" class="form-control" oninput="validateEmail('SignUpEmail','SignUpEmailSpan')" id="SignUpEmail" placeholder="Email Address">
       </div>
       <div class="col-md-12">
         <label for="inputPassword4" class="form-label">Password</label><label class="form-label text-danger">&nbsp;* </label>
         <span id="SignUpPasswordSpan"></span>
-        <input type="password" class="form-control" id="SignUpPassword" placeholder="Password" oninput="validatePasswordStrength('SignUpPassword','SignUpPasswordSpan',1)" onfocusout="validatePasswordStrength('SignUpPassword','SignUpPasswordSpan',2)">
+        <input type="password" class="form-control" id="SignUpPassword" placeholder="Password" oninput="validatePasswordStrength('SignUpPassword','SignUpPasswordSpan',2)" onfocusout="validatePasswordStrength('SignUpPassword','SignUpPasswordSpan',1)">
         <label for="PasswordHint" class="form-label text-secondary">Make sure it's at least 8 characters including a number, a uppercase letter and a lowercase letter.</label>
       </div>
 
@@ -217,6 +220,8 @@
 </div>
 </section>
 <!-- Main content stops here -->
+
+
 <footer>
   <div class=" container-fluid navbar-color">
     <p class="text-center text-white">All rights reserved © Kerala Tourism 2021</p> 

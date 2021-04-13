@@ -7,7 +7,7 @@ if(EmailVar.value.match(mailformat))
     let p = document.getElementById(SpanID);
     p.innerHTML ="<span id='"+SpanID+"'>"+"</span>";
     let q= document.getElementById(elementId);
-    q.style.border="blue solid 0px";
+    q.style.border="Green solid 2px";
     return true;
     }
 else
@@ -30,7 +30,7 @@ if(phNbrVar.value.match(phoneNumberFormat))
     let p = document.getElementById(SpanID);
     p.innerHTML ="<span id='"+SpanID+"'>"+"</span>";
     let q= document.getElementById(elementId);
-    q.style.border="blue solid 0px";
+    q.style.border="green solid 2px";
     return true;
     }
 else
@@ -53,7 +53,7 @@ if(pwdVar.value.match(pwdFormat))
     let p = document.getElementById(SpanID);
     p.innerHTML ="<span id='"+SpanID+"'>"+"</span>";
     let q= document.getElementById(elementId);
-    q.style.border="blue solid 0px";
+    q.style.border="green solid 2px";
     return true;
     }
 else
@@ -129,7 +129,7 @@ function validatePasswordStrength(elementId, SpanID, conext)///passing element a
         }  
    if (strength[strengthIndicator]=='Medium') 
        {
-       p.innerHTML ="<div class='balloonWarning'><p style='color: #FF7043'>Medium Password</p></div>";
+       p.innerHTML ="<div class='balloonWarning'><p style='color: #FF7043'>Medium Strength Password</p></div>";
        q.style.border="yellow solid 2px"; 
        return false; 
        }
@@ -141,16 +141,16 @@ function validatePasswordStrength(elementId, SpanID, conext)///passing element a
        }
     if (strength[strengthIndicator]=='Very Strong')
     {
-    if (conext==1)
+    if (conext==2)
        {
         p.innerHTML ="<div class='balloonStrong'><p style='color: Green'>Strong Password</p></div>";
         q.style.border="Green solid 2px";  
         console.log("conext :1");   
        }
-    else
+    if (conext==1)
        {
-        p.innerHTML ="<span id='SignUpPasswordSpan'></span>";
-        q.style.border="Green solid 0px";   
+        p.innerHTML ="<span id='"+SpanID+"'></span>";
+        q.style.border="Green solid 2px";   
         console.log("conext :2");           
        }
     return true; 
@@ -194,7 +194,7 @@ function validateLoginData()
 
 function validateLoginForm()
 {   
-       if ((validateLoginData() && validateEmail('LoginEmail','LoginEmailSpan' )&& validatePasswordStrength('LoginPwd','LoginPwdSpan',2)) == true)
+       if ((validateLoginData() && validateEmail('LoginEmail','LoginEmailSpan' )&& validatePasswordStrength('LoginPwd','LoginPwdSpan',1)) == true)
       {
            return true;  
       }
@@ -243,7 +243,7 @@ function validateSignUpData()
 
 function validateSignUpForm()
 {   
-       if ((validateSignUpData() && validateEmail('SignUpEmail','SignUpEmailSpan') && validatePasswordStrength('SignUpPassword','SignUpPasswordSpan',2) && validatePhone('phonenumber','PhoneNumberSpan' )) == true)
+       if ((validateSignUpData() && validateEmail('SignUpEmail','SignUpEmailSpan') && validatePasswordStrength('SignUpPassword','SignUpPasswordSpan',1) && validatePhone('phonenumber','PhoneNumberSpan' )) == true)
       {
            return true;  
       }

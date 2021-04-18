@@ -72,14 +72,14 @@ function validatePasswordStrength(elementId, SpanID, conext)///passing element a
         1: 'Very Weak',
         2: 'Weak',
         3: 'Medium',
-        4: 'Strong',
-        5: 'Very Strong'
+        // 4: 'Strong',
+        4: 'Very Strong'
       };
 
       let strengthValue = {
         'caps': false,
         'length': false,
-        'special': false,
+        // 'special': false,
         'numbers': false,
         'small': false
       };
@@ -98,9 +98,10 @@ function validatePasswordStrength(elementId, SpanID, conext)///passing element a
           strengthValue.small = true;
         } else if(!strengthValue.numbers && char >=48 && char <= 57){
           strengthValue.numbers = true;
-        } else if(!strengthValue.special && (char >=33 && char <= 47) || (char >=58 && char <= 64)) {
-          strengthValue.special = true;
-        }
+        } 
+        // else if(!strengthValue.special && (char >=33 && char <= 47) || (char >=58 && char <= 64)) {
+        //   strengthValue.special = true;
+        // }
       }
 
       let strengthIndicator = 0;    
@@ -130,13 +131,13 @@ function validatePasswordStrength(elementId, SpanID, conext)///passing element a
    if (strength[strengthIndicator]=='Medium') 
        {
        p.innerHTML ="<div class='balloonWarning'><p style='color: #FF7043'>Medium Strength Password</p></div>";
-       q.style.border="yellow solid 2px"; 
+       q.style.border="Orange solid 2px"; 
        return false; 
        }
    if  (strength[strengthIndicator]=='Strong')
        {
        p.innerHTML ="<div class='balloonWarning'><p style='color: #FF7043'>Medium Strength Password</p></div>";
-       q.style.border="yellow solid 2px";  
+       q.style.border="orange solid 2px";  
        return false; 
        }
     if (strength[strengthIndicator]=='Very Strong')
